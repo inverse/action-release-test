@@ -14,5 +14,5 @@ jobs:
         echo "Tag name from github.ref_name: ${{  github.ref_name }}"
     - name: Get version
       run: |
-        VERSION==$(cat version)
+        VERSION=$(cat version)
         echo "Version name from file: ${VERSION}"
